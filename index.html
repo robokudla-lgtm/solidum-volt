@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Elektrikár Bratislava – elektroinštalácie, projekty a revízie | SOLIDUM VOLT</title>
+<meta name="description" content="Rodinná elektro firma z Bratislavy. Elektroinštalácie domov a bytov, rozvádzače, projekty, revízie a inteligentná domácnosť. Odpoveď na dopyt do 2 hodín."/>
+<link rel="canonical" href="https://volt.solidumcore.com/"/>
+<meta property="og:title" content="SOLIDUM VOLT – elektroinštalácie, projekty a revízie z jedných rúk"/>
+<meta property="og:description" content="Rodinná elektro firma z Bratislavy. Domy, byty, rozvádzače, smart home, revízie."/>
+<meta property="og:type" content="website"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230B1A30'/%3E%3Cg transform='translate(20 20) scale(.6)'%3E%3Cpath d='M74 22H40a15 15 0 0 0 0 30h20a15 15 0 0 1 0 30H26' fill='none' stroke='%23fff' stroke-width='9'/%3E%3Ccircle cx='78' cy='22' r='8' fill='%23F5C400'/%3E%3Ccircle cx='22' cy='82' r='8' fill='%23F5C400'/%3E%3C/g%3E%3C/svg%3E"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Merriweather:wght@700;900&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --navy: #0B1A30;
+    --navy-2: #12243F;
+    --volt: #F5C400;
+    --snow: #F4F6FA;
+    --ink: #0B1A30;
+    --text: #2A3A52;
+    --muted: #5B6B82;
+    --line: #DDE3EC;
+    --white: #FFFFFF;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--snow); color: var(--text); font-family: Lato, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; font-size: 17px; line-height: 1.65; }
+  a { color: var(--navy); }
+  h1, h2, h3 { font-family: Merriweather, Georgia, serif; color: var(--ink); line-height: 1.2; margin: 0; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+  section { padding: 80px 0; }
+  .kicker { color: #8A6D00; text-transform: uppercase; letter-spacing: .18em; font-size: 13px; font-weight: 700; margin-bottom: 12px; }
+  h2 { font-size: clamp(26px, 3.4vw, 36px); margin-bottom: 28px; }
+
+  /* header */
+  header.top { background: var(--navy); position: sticky; top: 0; z-index: 10; border-bottom: 1px solid #1d3354; }
+  .nav { display: flex; align-items: center; justify-content: space-between; min-height: 72px; gap: 16px; }
+  .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+  .brand svg { width: 40px; height: 40px; flex-shrink: 0; }
+  .brand .name { display: flex; flex-direction: column; gap: 3px; line-height: 1; letter-spacing: .22em; font-size: 15px; }
+  .brand .name b { color: #fff; font-weight: 900; }
+  .brand .name span { color: var(--volt); font-weight: 300; }
+  .nav ul { display: flex; gap: 26px; list-style: none; margin: 0; padding: 0; font-size: 15px; }
+  .nav ul a { color: #C9D3E3; text-decoration: none; }
+  .nav ul a:hover { color: var(--volt); }
+  .nav-cta { background: var(--volt); color: var(--navy); padding: 10px 16px; border-radius: 10px; font-weight: 700; text-decoration: none; white-space: nowrap; }
+
+  /* hero */
+  .hero { background: radial-gradient(1200px 500px at 85% -10%, #1d3556 0%, var(--navy) 55%); color: #E9ECF2; padding: 96px 0 88px; }
+  .hero .kicker { color: var(--volt); }
+  .hero h1 { color: #fff; font-size: clamp(32px, 5vw, 54px); margin: 6px 0 20px; max-width: 860px; }
+  .hero p.lead { font-size: 20px; color: #C9D3E3; max-width: 720px; margin: 0 0 30px; }
+  .btns { display: flex; flex-wrap: wrap; gap: 14px; }
+  .btn { display: inline-block; padding: 14px 22px; border-radius: 12px; font-weight: 700; border: 1px solid var(--volt); color: var(--volt); text-decoration: none; }
+  .btn.primary { background: var(--volt); color: var(--navy); }
+  .btn:hover { opacity: .9; }
+  .facts { display: flex; flex-wrap: wrap; gap: 12px 28px; list-style: none; padding: 0; margin: 36px 0 0; color: #C9D3E3; font-size: 16px; }
+  .facts li::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--volt); margin-right: 10px; vertical-align: middle; }
+
+  /* cards */
+  .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+  .card { background: var(--white); border: 1px solid var(--line); border-radius: 14px; padding: 26px; }
+  .card h3 { font-family: Lato, sans-serif; font-weight: 900; font-size: 19px; margin-bottom: 8px; }
+  .card p { margin: 0; color: var(--muted); font-size: 16px; }
+
+  /* about */
+  .about { background: var(--white); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .about .cols { display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; align-items: start; }
+  .about p { margin: 0 0 16px; }
+  .person { background: var(--snow); border-radius: 14px; padding: 26px; }
+  .person b { display: block; color: var(--ink); font-size: 18px; }
+  .person span { color: var(--muted); font-size: 15px; }
+
+  /* steps */
+  ol.steps { list-style: none; counter-reset: s; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 18px; }
+  ol.steps li { counter-increment: s; background: var(--white); border: 1px solid var(--line); border-radius: 14px; padding: 22px; font-size: 15.5px; color: var(--muted); }
+  ol.steps li::before { content: counter(s); display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: var(--navy); color: var(--volt); font-weight: 900; margin-bottom: 12px; }
+  ol.steps b { display: block; color: var(--ink); font-size: 17px; margin-bottom: 4px; }
+
+  /* contact */
+  .contact { background: var(--navy); color: #C9D3E3; }
+  .contact h2 { color: #fff; }
+  .contact .kicker { color: var(--volt); }
+  .contact .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+  .contact a.big { display: block; color: #fff; font-size: 26px; font-weight: 900; text-decoration: none; margin-bottom: 6px; }
+  .contact a.big:hover { color: var(--volt); }
+  .contact dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 8px 20px; }
+  .contact dt { color: #8FA0B8; }
+  .contact dd { margin: 0; color: #fff; }
+
+  footer { background: #071222; color: #8FA0B8; font-size: 14px; padding: 28px 0; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; }
+
+  @media (max-width: 900px) {
+    .nav ul { display: none; }
+    .grid { grid-template-columns: 1fr; }
+    .about .cols, .contact .cols { grid-template-columns: 1fr; gap: 28px; }
+    ol.steps { grid-template-columns: 1fr; }
+    section { padding: 56px 0; }
+    .hero { padding: 64px 0 56px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="SOLIDUM VOLT">
+      <svg viewBox="0 0 100 100" aria-hidden="true"><path d="M74 22H40a15 15 0 0 0 0 30h20a15 15 0 0 1 0 30H26" fill="none" stroke="#fff" stroke-width="9"/><circle cx="78" cy="22" r="8" fill="#F5C400"/><circle cx="22" cy="82" r="8" fill="#F5C400"/></svg>
+      <span class="name"><b>SOLIDUM</b><span>VOLT</span></span>
+    </a>
+    <ul>
+      <li><a href="#sluzby">Služby</a></li>
+      <li><a href="#o-nas">O nás</a></li>
+      <li><a href="#postup">Ako to prebieha</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <a class="nav-cta" href="tel:+421949859607">0949 859 607</a>
+  </div>
+</header>
+
+<main id="top">
+
+<div class="hero">
+  <div class="wrap">
+    <div class="kicker">Elektrikár · Bratislava a okolie</div>
+    <h1>Elektroinštalácie, projekty a revízie z jedných rúk</h1>
+    <p class="lead">Rodinná elektro firma z Bratislavy. Elektroinštaláciu vám navrhneme, zapojíme aj zrevidujeme, takže nemusíte zháňať projektanta, elektrikára a revízneho technika zvlášť.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:volt@solidumcore.com?subject=Dopyt%20%E2%80%93%20elektro&body=Dobr%C3%BD%20de%C5%88%2C%0A%0Aobec%3A%20%0Atyp%20objektu%20(dom%20%2F%20byt%20%2F%20firma)%3A%20%0A%C4%8Do%20potrebujem%3A%20%0Atelef%C3%B3n%3A%20%0A">Poslať dopyt</a>
+      <a class="btn" href="tel:+421949859607">Zavolať 0949 859 607</a>
+    </div>
+    <ul class="facts">
+      <li>Odpoveď na dopyt do 2 hodín v pracovnom čase</li>
+      <li>Položková cenová ponuka po obhliadke</li>
+      <li>Bratislava a okolie do 50 km</li>
+    </ul>
+  </div>
+</div>
+
+<section id="sluzby">
+  <div class="wrap">
+    <div class="kicker">Služby</div>
+    <h2>Čo pre vás urobíme</h2>
+    <div class="grid">
+      <div class="card"><h3>Elektroinštalácie domov a bytov</h3><p>Novostavby aj rekonštrukcie. Silnoprúd aj slaboprúd: zásuvky, svetlá, dáta, TV, zvonček a kamery.</p></div>
+      <div class="card"><h3>Rozvádzače</h3><p>Návrh, výroba a výmena bytových aj domových rozvádzačov. Doplníme prúdové chrániče a prepäťové ochrany.</p></div>
+      <div class="card"><h3>Poruchy a opravy</h3><p>Vypadávajúce ističe, skraty, nefunkčné okruhy. Pri poruche prídeme čo najskôr.</p></div>
+      <div class="card"><h3>Projekty</h3><p>Projekt elektroinštalácie pre stavebné povolenie aj realizáciu, projekt bleskozvodu a prípojka NN.</p></div>
+      <div class="card"><h3>Revízie</h3><p>Východiskové a periodické revízie elektroinštalácie a bleskozvodu. Dostanete revíznu správu.</p></div>
+      <div class="card"><h3>Inteligentná domácnosť</h3><p>Návrh, kabeláž, montáž a nastavenie systémov Loxone a TapHome. Svetlá, žalúzie, kúrenie aj zabezpečenie v jednej aplikácii.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="o-nas" class="about">
+  <div class="wrap cols">
+    <div>
+      <div class="kicker">O nás</div>
+      <h2>Jeden kontakt, jedna zodpovednosť</h2>
+      <p>SOLIDUM VOLT je elektroinštalačná divízia spoločnosti SOLIDUM CORE, spol. s r.o. Sme rodinná firma z Bratislavy a robíme najmä pre majiteľov rodinných domov a bytov.</p>
+      <p>Projekt, montáž aj revíziu máte u nás pod jednou strechou. Dostanete jednu cenovú ponuku, v ktorej vidíte každú položku, vrátane toho, čo v cene nie je.</p>
+    </div>
+    <div class="person">
+      <b>Ing. Róbert Kudla jr.</b>
+      <span>zodpovedný elektrotechnik, § 23</span>
+      <p style="margin:14px 0 0">Skúsenosti zbieral v Nemecku, kde riadil veľké priemyselné projekty. Rovnakú presnosť a poriadok dnes prináša do domácností.</p>
+    </div>
+  </div>
+</section>
+
+<section id="postup">
+  <div class="wrap">
+    <div class="kicker">Postup</div>
+    <h2>Ako to prebieha</h2>
+    <ol class="steps">
+      <li><b>Dopyt</b>Napíšete alebo zavoláte. V pracovnom čase sa ozveme do 2 hodín.</li>
+      <li><b>Obhliadka</b>Prídeme sa pozrieť na miesto, zameriame a odfotíme rozvádzač.</li>
+      <li><b>Cenová ponuka</b>Položková ponuka s platnosťou 30 dní. Uvedieme aj to, čo v cene nie je.</li>
+      <li><b>Realizácia</b>Pracujeme podľa zmluvy a termínu. Skryté rozvody pred zakrytím odfotíme.</li>
+      <li><b>Revízia a odovzdanie</b>Dostanete revíznu správu a preberací protokol.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="kontakt" class="contact">
+  <div class="wrap cols">
+    <div>
+      <div class="kicker">Kontakt</div>
+      <h2>Napíšte nám, čo potrebujete</h2>
+      <p>Stačí pár viet: obec, typ objektu a čo treba urobiť. Fotka rozvádzača pomôže. Ozveme sa a dohodneme termín obhliadky.</p>
+      <a class="big" href="tel:+421949859607">0949 859 607</a>
+      <a class="big" href="mailto:volt@solidumcore.com">volt@solidumcore.com</a>
+    </div>
+    <dl>
+      <dt>Pracovný čas</dt><dd>pondelok – piatok, 8:00 – 17:00</dd>
+      <dt>Kde pracujeme</dt><dd>Bratislava a okolie do 50 km: Senec, Pezinok, Malacky, Šamorín, Dunajská Streda, Galanta</dd>
+      <dt>Ceny</dt><dd>Presnú položkovú cenu dostanete po obhliadke. K cenám sa pripočíta DPH 23 %.</dd>
+    </dl>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>SOLIDUM VOLT je obchodná značka spoločnosti SOLIDUM CORE, spol. s r.o., Na Hrebienku 8079/2A, 811 02 Bratislava-Staré Mesto.</span>
+    <span>© 2026 SOLIDUM CORE, spol. s r.o.</span>
+  </div>
+</footer>
+
+</body>
+</html>
